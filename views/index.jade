@@ -1,82 +1,85 @@
 extends layout
 
 block content
-    title Tim Johnson
-    nav.navbar.navbar-inverse(role='navigation')
-        .container-fluid
-            // Brand and toggle get grouped for better mobile display
-            .navbar-header
-                button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
-                    span.sr-only Toggle navigation
-                    span.icon-bar
-                    span.icon-bar
-                    span.icon-bar
-                a.navbar-brand(href='#') Home
-                #bs-example-navbar-collapse-1.collapse.navbar-collapse
-            ul.nav.navbar-nav
-                li.active
-                    a(href='index.html')
-                        | Home
-                        span.sr-only (current)
-                li
-                    a(href='https://medium.com/@Timotay_Johnson') Blog
-                li
-                    a(href='https://twitter.com/Timotay_Johnson') Twitter
-                li
-                    a(href='https://www.linkedin.com/pub/timothy-johnson/4a/ab9/453') LinkedIn
-                li
-                    a(href='https://github.com/timottitleayj') Github
-                li
-                    a(href='about.html') CV
-    .jumbotron
-        .container
-            h1 Tim Johnson
-    .row
-        .container
-            .col-xs-6.col-md-4
-                h3
-                    | Welcome
-                    span.label.label-default
-                p
-                    | Welcome to the homepage for Tim Johnson, material scientist PhD student. This page contains links to social media site I frequent as well as information about my scientific interest.
-                p
-                    | After graduating from the University of Hull in 2012 I moved to Liverpool to pursue a PhD in material chemistry under the supervision of Prof. Matt Rosseinsky, focusing on metal oxides for environmental photocatalysis. My interest lay in new material productions, nano-material fabrication and applications as well as microscopy.
-                p
-                    | My PhD afforded me the opportunity to work closely with industry, due to funding from Johnson Matthey, as well as academia.
-                p
-                    | I also enjoy coding, from website development to applications for personal and educational use. I have experience with Python, Java, HTML, CSS, JavaScript and node.js.
-                p
-                br
-                h4 Publications
+
+    head
+        title= 'title'
+        nav.navbar.navbar-inverse(role='navigation')
+            .container-fluid
+                // Brand and toggle get grouped for better mobile display
+                .navbar-header
+                    button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+                        span.sr-only Toggle navigation
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+
+                ul.nav.navbar-nav
+                    li.active
+                        a(href='/')
+                            | Home
+                            span.sr-only (current)
+                    li
+                        a(href='https://medium.com/@Timotay_Johnson') Blog
+                    li
+                        a(href='https://twitter.com/Timotay_Johnson') Twitter
+                    li
+                        a(href='https://www.linkedin.com/pub/timothy-johnson/4a/ab9/453') LinkedIn
+                    li
+                        a(href='https://github.com/timotayj') Github
+                    li
+                        a(href='/CV') CV
+    body
+        .jumbotron
+            .container
+                h1  Tim Johnson
+
+        .row
+            .container
+                .col-xs-6.col-md-4
+                    h3
+                        | Welcome
+                        span.label.label-default
+                    p
+                        | Welcome to my home on the web, I'm a material chemist PhD student. This page contains links to social media site I frequent as well as information about my scientific interest.
+                    p
+                        | After graduating from the University of Hull in 2012 I moved to Liverpool to pursue a PhD in material chemistry under the supervision of Prof. Matt Rosseinsky, focusing on metal oxides for environmental photocatalysis. My interest lay in new material productions, nano-material fabrication and microscopy.
+                    p
+                        | My PhD afforded me the opportunity to work closely with industry due to funding from Johnson Matthey.
+                    p
+                        | I also enjoy coding, from website development to applications for personal and educational use. I have experience with Python, Java, HTML, CSS, JavaScript, node.js and express.js.
+                    p
+                    br
+                    h4 Publications
 
 
 
-                p
-                    b
-                        | Photocatalytic Water Oxidation Under Visible Light Irradiation By A Pyrochlore Oxide: Rhodium Substitution Into Yttrium Titanate
-                p
-                    | B. Kiss, C. Didier, T. Johnson, T. D. Manning, M. S. Dyer, A. J. Cowan, J. B. Claridge, J. R. Darwent, M. J. Rosseinsky,
-                    i  Angew. Chem. Int. Ed.
-                    |, 2014,
-                    b  52
-                    | , 14480-14484.
+                    p
+                        b
+                            | Photocatalytic Water Oxidation Under Visible Light Irradiation By A Pyrochlore Oxide: Rhodium Substitution Into Yttrium Titanate
+                    p
+                        | B. Kiss, C. Didier, T. Johnson, T. D. Manning, M. S. Dyer, A. J. Cowan, J. B. Claridge, J. R. Darwent, M. J. Rosseinsky,
+                        i  Angew. Chem. Int. Ed.
+                        |, 2014,
+                        b  52
+                        | , 14480-14484.
 
-                br
-                p
-                    b
-                        | Wastewater as a photoelectrochemical fuel source: Light-to-electrical energy conversion with organochloride remediation
-                p
-                    | J. E. Halls, T. Johnson, A. A. Altalhi, J. D. Wadhawan,
-                    i Electrochemistry Communications
-                    | , 2012,
-                    b 22
-                    | , 4-7.
+                    br
+                    p
+                        b
+                            | Wastewater as a photoelectrochemical fuel source: Light-to-electrical energy conversion with organochloride remediation
+                    p
+                        | J. E. Halls, T. Johnson, A. A. Altalhi, J. D. Wadhawan,
+                        i  Electrochemistry Communications
+                        | , 2012,
+                        b  22
+                        | , 4-7.
 
 
-            .col-xs-6.col-md-4
-                img.img-responsive(src='/images/condensor.jpg' , alt='Responsive image')
-                br
-                img.img-responsive(src='/images/SEM.png' , alt='Responsive image')
-                br
-                img.img-responsive(src='/images/OPM.png' , alt='Responsive image')
+                .col-xs-4.col-md-offset-1
+                    img.img-responsive(src='/images/condensor.jpg' , alt='Responsive image')
+                    br
+                    img.img-responsive(src='/images/SEM.png' , alt='Responsive image')
+                    br
+                    img.img-responsive(src='/images/OPM.png' , alt='Responsive image')
 

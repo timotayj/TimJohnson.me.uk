@@ -1,0 +1,39 @@
+.jumbotron{
+    background-image: url("/images/background.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+
+
+
+}
+
+.jumbotron h1 {
+    color: #FFFFFF;
+
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+.navbar-inverse{
+    border-radius: 0 !important;
+
+    margin-bottom: 0; !important;
+
+}
+
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+
+
+li {
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+
+

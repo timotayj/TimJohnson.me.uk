@@ -1,0 +1,74 @@
+extends layout
+block content
+
+    nav.navbar.navbar-inverse(role='navigation')
+        .container-fluid
+            // Brand and toggle get grouped for better mobile display
+            .navbar-header
+                button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+                    span.sr-only Toggle navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+
+            ul.nav.navbar-nav
+                li
+                    a(href='/') Home
+                li
+                    a(href='https://medium.com/@Timotay_Johnson') Blog
+                li
+                    a(href='https://twitter.com/Timotay_Johnson') Twitter
+                li
+                    a(href='https://www.linkedin.com/pub/timothy-johnson/4a/ab9/453') LinkedIn
+                li
+                    a(href='https://github.com/timotayj') Github
+                li.active
+                    a(href='/CV')
+                        | CV
+                        span.sr-only (current)
+
+
+        span.label.label-default
+    .col-xs-4.col-md-offset-1
+        h1 CV
+        h3 Education
+        ul
+            li Henry Box School Witney (2001-2008).
+            br
+            li University of Hull, Chemistry with Nanotechnology MChem. (2008-2012).
+            br
+            li University of Liverpool, PhD, Supervisor Prof. M.J Rosseinsky (2012-Current).
+            br
+        h3 Skills
+        ul
+            li
+                b TEM
+                | : Collection of EDX and images not only for my PhD project but also for others in the group.
+            br
+            li
+                b XRD
+                | : Trained in use of multiple diffractometers. Analysis of collected patterns by Pawley fitting and Rietveld refinement was critical to my PhD project.
+            br
+            li
+                b DLS
+                | : Trained to use and analyse data from dynamic light scattering instruments. The ability to determine size and surface charge of catalysts was a core component of my PhD project.
+            br
+            li
+                b BET
+                | : Trained to use and analyse data from BET instruments, surface area is a important factor in catalyst chemistry and so played a large role during my time at Liverpool.
+            br
+            li
+                b Others
+                | : During my pHd I utilised many techniques to characterise new materials, these include XPS, XANES, CO metal surface ares, TPO/TPR and ICP
+
+
+    .col-xs-3.col-md-offset-1
+        br
+        br
+        figure
+            img.img-responsive(src='/images/Tim.png', alt='Responsive image')
+            br
+            figcaption
+                | Courtesy of
+                a(href='http://www.asahiggsphoto.com/')  Asa Higgs
+    .span3.offset2
